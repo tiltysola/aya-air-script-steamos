@@ -36,12 +36,13 @@ fi
 
 echo 'Start to install gamescope-plus for Ayaneo Air';
 cd gamescope-plus;
+git switch force-orientation;
+git submodule update --init;
 git switch gamescope-plus;
-git submodule update --init
-meson build/
-ninja -C build/
-sudo meson install -C build/ --skip-subprojects
-sudo cp /usr/local/bin/gamescope /usr/bin/
+meson build/;
+ninja -C build/;
+sudo meson install -C build/ --skip-subprojects;
+sudo cp /usr/local/bin/gamescope /usr/bin/;
 cd ../;
 echo 'Installation finished: gamescope-plus';
 
