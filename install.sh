@@ -36,6 +36,7 @@ git switch gamescope-plus;
 git submodule update --init
 meson build/
 ninja -C build/
+meson install -C build/ --skip-subprojects
 sudo cp /usr/local/bin/gamescope /usr/bin/
 cd ../;
 echo 'Installation finished: gamescope-plus';
