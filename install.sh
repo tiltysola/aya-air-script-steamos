@@ -18,7 +18,7 @@ git clone 'https://github.com/ShadowBlip/HandyGCCS';
 echo 'Start to install HandyGCCS for Ayaneo Air';
 cd HandyGCCS;
 git switch aya-air;
-# sudo make install;
+sudo make install;
 cd ../;
 echo 'Installation finished: HandyGCCS';
 
@@ -26,8 +26,8 @@ echo 'Start to clone repository: ruineka/gamescope-session';
 git clone 'https://github.com/ruineka/gamescope-session';
 echo 'Start to install gamescope-session for Ayaneo Air';
 cd gamescope-session;
-# sudo cp -i -r ./etc /;
-# sudo cp -i -r ./usr /;
+sudo cp -i -r ./etc /;
+sudo cp -i -r ./usr /;
 cd ../;
 echo 'Installation finished: gamescope-session';
 
