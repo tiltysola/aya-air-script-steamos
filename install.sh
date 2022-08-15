@@ -32,12 +32,12 @@ sudo make install;
 cd ../;
 echo 'Installation finished: HandyGCCS';
 
-if [ ! -d 'gamescope-plus' ]; then
-  echo 'Start to clone repository: ruineka/gamescope-plus';
-  git clone 'https://github.com/ruineka/gamescope-plus.git';
-else
-  echo 'Repository exists: ruineka/gamescope-plus';
-fi
+# if [ ! -d 'gamescope-plus' ]; then
+#   echo 'Start to clone repository: ruineka/gamescope-plus';
+#   git clone 'https://github.com/ruineka/gamescope-plus.git';
+# else
+#   echo 'Repository exists: ruineka/gamescope-plus';
+# fi
 
 echo 'Start to install gamescope-plus for Ayaneo Air';
 # cd gamescope-plus;
