@@ -44,7 +44,7 @@ fi
 
 echo 'Start to install gamescope-plus for Ayaneo Air';
 cd gamescope-plus;
-git switch force-orientation;
+git switch master;
 git submodule update --init;
 git switch gamescope-plus;
 meson build/;

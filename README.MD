@@ -12,8 +12,10 @@ chmod +x ./install.sh
 sudo ./install.sh
 ```
 
-#### 4. Optional: Install grub-customizer and configure default boot option.
+#### 4. Optional: Install grub-customizer from the Discover store and configure default boot option.
 
-#### 5. Enjoy your AyaNeo Air!
+#### 5. Optional: Install Crankshaft from the Discover store and install HandyPT plugin.
+
+#### 6. Enjoy your AyaNeo Air!
 
 ### Especial thanks to HoloISO, ShadowBlip, ruineka and others.
