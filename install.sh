@@ -9,12 +9,13 @@ echo '| Script by YoumuKonpaku (https://youmukonpaku.com)            |';
 echo '----------------------------------------------------------------';
 echo '';
 
-echo 'Clean history caches...';
-rm -rf HandyGCCS;
-rm -rf gamescope-session;
+if [ ! -d 'HandyGCCS' ]; then
+  echo 'Start to clone repository: ShadowBlip/HandyGCCS';
+  git clone 'https://github.com/ShadowBlip/HandyGCCS';
+else
+  echo 'Repository exists: ShadowBlip/HandyGCCS';
+fi
 
-echo 'Start to clone repository: ShadowBlip/HandyGCCS';
-git clone 'https://github.com/ShadowBlip/HandyGCCS';
 echo 'Start to install HandyGCCS for Ayaneo Air';
 cd HandyGCCS;
 git switch aya-air;
@@ -22,8 +23,13 @@ sudo make install;
 cd ../;
 echo 'Installation finished: HandyGCCS';
 
-echo 'Start to clone repository: ruineka/gamescope-session';
-git clone 'https://github.com/ruineka/gamescope-session';
+if [ ! -d 'gamescope-session' ]; then
+  echo 'Start to clone repository: ruineka/gamescope-session';
+  git clone 'https://github.com/ruineka/gamescope-session';
+else
+  echo 'Repository exists: ruineka/gamescope-session';
+fi
+
 echo 'Start to install gamescope-session for Ayaneo Air';
 cd gamescope-session;
 sudo cp -i -r ./etc /;
