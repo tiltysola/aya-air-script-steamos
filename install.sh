@@ -41,8 +41,6 @@ sudo cp /usr/local/bin/gamescope /usr/bin/
 cd ../;
 echo 'Installation finished: gamescope-plus';
 
-echo 'All operations has done, enjoy your Ayaneo Air!';
-
 if [ ! -d 'gamescope-session' ]; then
   echo 'Start to clone repository: ruineka/gamescope-session';
   git clone 'https://github.com/ruineka/gamescope-session.git';
@@ -52,8 +50,8 @@ fi
 
 echo 'Start to install gamescope-session for Ayaneo Air';
 cd gamescope-session;
-sudo cp -i -r ./etc /;
-sudo cp -i -r ./usr /;
+sudo cp -f -r ./etc /;
+sudo cp -f -r ./usr /;
 cd ../;
 echo 'Installation finished: gamescope-session';
 
