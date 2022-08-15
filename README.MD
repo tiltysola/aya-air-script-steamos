@@ -1,6 +1,7 @@
 # AyaNeo Air & SteamOS (HoloISO) script
 
-> Oneclick install script: bash <(curl -s -L https://git.futo.design/zero/aya-air-script-steamos/-/raw/master/install.sh)
+> Pre-requirements: `pacman -Sy meson ninja`
+> Oneclick install script: `bash <(curl -s -L https://git.futo.design/zero/aya-air-script-steamos/-/raw/master/install.sh)`
 
 #### 1. Install the HoloISO, follow the link: [HoloISO](https://github.com/theVakhovskeIsTaken/holoiso).
 
