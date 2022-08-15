@@ -18,9 +18,6 @@ makepkg -fsri
 cd ../
 echo 'Pre-installation end...';
 
-sudo pikaur -S rz608-fix-git
-sudo udevadm control -R
-
 if [ ! -d 'HandyGCCS' ]; then
   echo 'Start to clone repository: ShadowBlip/HandyGCCS';
   git clone 'https://github.com/ShadowBlip/HandyGCCS.git';
@@ -43,15 +40,16 @@ else
 fi
 
 echo 'Start to install gamescope-plus for Ayaneo Air';
-cd gamescope-plus;
-git switch master;
-git submodule update --init;
-git switch gamescope-plus;
-meson build/;
-ninja -C build/;
-sudo meson install -C build/ --skip-subprojects;
-sudo cp /usr/local/bin/gamescope /usr/bin/;
-cd ../;
+# cd gamescope-plus;
+# git switch master;
+# git submodule update --init;
+# git switch gamescope-plus;
+# meson build/;
+# ninja -C build/;
+# sudo meson install -C build/ --skip-subprojects;
+# sudo cp /usr/local/bin/gamescope /usr/bin/;
+# cd ../;
+sudo cp ./binary/gamescope /usr/bin/;
 echo 'Installation finished: gamescope-plus';
 
 if [ ! -d 'gamescope-session' ]; then
@@ -67,5 +65,10 @@ sudo cp -f -r ./etc /;
 sudo cp -f -r ./usr /;
 cd ../;
 echo 'Installation finished: gamescope-session';
+
+echo 'Start to install rz608-fix-git for Ayaneo Air';
+sudo pikaur -S rz608-fix-git
+sudo udevadm control -R
+echo 'Installation finished: rz608-fix-git';
 
 echo 'All operations has done, enjoy your Ayaneo Air!';
