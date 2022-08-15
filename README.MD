@@ -1,5 +1,7 @@
 # AyaNeo Air & SteamOS (HoloISO) script
 
+> Oneclick install script: bash <(curl -s -L https://git.futo.design/zero/aya-air-script-steamos/-/raw/master/install.sh)
+
 #### 1. Install the HoloISO, follow the link: [HoloISO](https://github.com/theVakhovskeIsTaken/holoiso).
 
 #### 2. Switch your start script to kernel 5.18 to fix network issue, See [#359](https://github.com/theVakhovskeIsTaken/holoiso/issues/359).
