@@ -9,6 +9,10 @@ echo '| Script by YoumuKonpaku (https://youmukonpaku.com)            |';
 echo '----------------------------------------------------------------';
 echo '';
 
+echo 'Pre-installation start...';
+sudo pacman -Sy meson ninja cmake python3 dbus-python vulkan-headers;
+echo 'Pre-installation end...';
+
 if [ ! -d 'HandyGCCS' ]; then
   echo 'Start to clone repository: ShadowBlip/HandyGCCS';
   git clone 'https://github.com/ShadowBlip/HandyGCCS.git';
