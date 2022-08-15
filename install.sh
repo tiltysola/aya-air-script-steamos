@@ -11,7 +11,15 @@ echo '';
 
 echo 'Pre-installation start...';
 sudo pacman -Sy meson ninja cmake python3 dbus-python vulkan-headers;
+sudo pacman -Sy --needed base-devel git
+git clone https://aur.archlinux.org/pikaur.git
+cd pikaur
+makepkg -fsri
+cd ../
 echo 'Pre-installation end...';
+
+sudo pikaur -S rz608-fix-git
+sudo udevadm control -R
 
 if [ ! -d 'HandyGCCS' ]; then
   echo 'Start to clone repository: ShadowBlip/HandyGCCS';
