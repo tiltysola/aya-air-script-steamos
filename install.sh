@@ -39,6 +39,13 @@ echo 'Installation finished: HandyGCCS';
 #   echo 'Repository exists: ruineka/gamescope-plus';
 # fi
 
+if [ ! -f 'gamescope' ]; then
+  echo 'Start to get binary: gamescope';
+  wget -c https://git.futo.design/zero/aya-air-script-steamos/-/raw/offline/binary/gamescope?inline=false;
+else
+  echo 'Binary exists: gamescope';
+fi
+
 echo 'Start to install gamescope-plus for Ayaneo Air';
 # cd gamescope-plus;
 # git switch master;
@@ -49,7 +56,7 @@ echo 'Start to install gamescope-plus for Ayaneo Air';
 # sudo meson install -C build/ --skip-subprojects;
 # sudo cp /usr/local/bin/gamescope /usr/bin/;
 # cd ../;
-sudo cp ./binary/gamescope /usr/bin/;
+sudo cp ./gamescope /usr/bin/;
 echo 'Installation finished: gamescope-plus';
 
 if [ ! -d 'gamescope-session' ]; then
