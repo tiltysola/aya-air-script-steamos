@@ -4,7 +4,7 @@
 
 #### 1. 若您想安装SteamOS，请前往这个链接： [HoloISO](https://github.com/theVakhovskeIsTaken/holoiso).
 
-#### 2. 启动时，您可以选择高级启动，并选择HoloISO(5.18内核)启动，以修复Wi-Fi问题。 详见： [#359](https://github.com/theVakhovskeIsTaken/holoiso/issues/359).
+#### 2. 启动时，您可选择高级/HoloISO(5.18内核)，以修复Wi-Fi问题。 详见： [#359](https://github.com/theVakhovskeIsTaken/holoiso/issues/359).
 
 #### 3. 切换到桌面模式，打开Kconsole输入以下指令：
 
@@ -12,9 +12,9 @@
 bash <(curl -s -L https://git.futo.design/zero/aya-air-script-steamos/-/raw/master/install.sh)`
 ```
 
-#### 4. 可选操作：前往Discover商店下载grub-customizer，可以将HoloISO(5.18内核)设置为默认启动选项。
+#### 4. 可选操作：前往Discover商店下载grub-customizer，即可将HoloISO(5.18内核)设置为默认启动选项。
 
-#### 5. 可选操作：前往Discover商店下载Crankshaft，之后前往Deck模式的菜单选择Plugins，下载HandyPT插件之后即可修改TDP设置。
+#### 5. 可选操作：前往Discover商店下载Crankshaft，之后前往Deck模式的菜单中选择Plugins，下载HandyPT插件后即可修改TDP设置。
 
 #### 6. 尽情享受SteamOS在AyaNeo Air上为您带来的快乐吧！
 

@@ -20,7 +20,7 @@ echo '基础依赖安装完成...';
 
 echo '开始安装HandyGCCS...';
 echo '备注: HandyGCCS可以修复Air功能键失效的问题.';
-pikaur -Sy handygccs-git;
+pikaur -Sy --needed handygccs-git;
 sudo udevadm control -R;
 sudo systemctl enable handycon && sudo systemctl start handycon;
 echo 'HandyGCCS安装完成...';
@@ -54,7 +54,7 @@ echo 'gamescope-session安装完成...';
 
 echo '开始安装rz608-fix-git...';
 echo '备注: rz608-fix-git可以修复Air息屏唤起后丢失Wi-Fi驱动的问题...';
-sudo pikaur -S rz608-fix-git
+sudo pikaur -Sy --needed rz608-fix-git
 sudo udevadm control -R
 echo 'rz608-fix-git安装完成...';
 
