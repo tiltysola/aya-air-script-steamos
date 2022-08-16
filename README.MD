@@ -22,8 +22,10 @@ bash <(curl -s -L https://git.futo.design/zero/aya-air-script-steamos/-/raw/mast
 
 #### 1. 有时会出现黑屏的状况，息屏后重新打开即可。
 
-#### 2. 长时间息屏后HandyGCCS会报错退出，此时功能键又处于无效状态，需要重启设备解决。
+#### 2. 长时间息屏后由于手柄进入休眠模式，HandyGCCS会报错退出，此时功能键又处于无效状态，需要重启设备解决。
 
 #### 3. 部分游戏无声音，已知游戏：Apex Legends。
+
+#### 4. 极少数情况下会出现卡死的情况，强制重启解决。
 
 ### Especial thanks to HoloISO, ShadowBlip, ruineka and others.
